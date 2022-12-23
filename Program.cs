@@ -21,6 +21,8 @@ namespace Ejercicio_80
 
 			double[][] numeros = new double[lineas][];
 
+			
+			//Añadiendo líneas a la tabla.
 			Console.WriteLine("Cuantos datos habrá en ");
 			for (int i = 0; i < lineas; i++)
 			{
@@ -30,7 +32,8 @@ namespace Ejercicio_80
 			}
 
 			Console.WriteLine();
-
+			
+                        //Añadiendo valores a las líneas de la tabla.
 			for (int i = 0; i < numeros.Length; i++)
 			{
 				for (int j = 0; j < numeros[i].Length; j++)
@@ -45,7 +48,7 @@ namespace Ejercicio_80
 			}
 
 
-
+                        //Mostrando los valores de la tabla.
 			for (int i = 0; i < numeros.Length; i++)
 			{
 				for (int j = 0; j < numeros[i].Length; j++)
@@ -59,7 +62,7 @@ namespace Ejercicio_80
 			Console.WriteLine();
 
 
-
+                        //Aquí intento sumar los valores de cada línea.
 			int k = 0;
 			for (int i = 0; i < numeros.Length; i++)
 			{
@@ -78,7 +81,7 @@ namespace Ejercicio_80
 			}
 
 
-		
+		       //Aquí intento mostrar la suma de cada línea.
 			for (int i = 0; i < numeros.Length; i++)
 			{
 				for (int j = 0; j <= numeros.Length; j++)
