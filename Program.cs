@@ -1,12 +1,4 @@
-/*80. Crea una variante del programa anterior, que pregunte al usuario cuántos 
-datos guardará en un primer bloque de números reales de doble precisión, 
-luego cuántos datos guardará en un segundo bloque, y finalmente pida todos esos datos. 
-Los debe guardar en un array de arrays. Después mostrará el promedio de los valores que 
-hay guardados en el primer subarray, luego el promedio de los valores en el segundo subarray 
-y finalmente el promedio global.*/
-
-
-using System;
+﻿using System;
 using System.Linq;
 
 namespace Ejercicio_80
@@ -29,8 +21,6 @@ namespace Ejercicio_80
 
 			double[][] numeros = new double[lineas][];
 
-			
-			//Añadiendo líneas a la tabla.
 			Console.WriteLine("Cuantos datos habrá en ");
 			for (int i = 0; i < lineas; i++)
 			{
@@ -40,8 +30,7 @@ namespace Ejercicio_80
 			}
 
 			Console.WriteLine();
-			
-                        //Añadiendo valores a las líneas de la tabla.
+
 			for (int i = 0; i < numeros.Length; i++)
 			{
 				for (int j = 0; j < numeros[i].Length; j++)
@@ -56,7 +45,7 @@ namespace Ejercicio_80
 			}
 
 
-                        //Mostrando los valores de la tabla.
+
 			for (int i = 0; i < numeros.Length; i++)
 			{
 				for (int j = 0; j < numeros[i].Length; j++)
@@ -70,38 +59,37 @@ namespace Ejercicio_80
 			Console.WriteLine();
 
 
-                        //Aquí intento sumar los valores de cada línea.
-			int k = 0;
-			for (int i = 0; i < numeros.Length; i++)
+
+
+			for (int i = 0; i < lineas; i++)
 			{
 
-				for (int j = 0; j <= numeros.Length; j++)
+				for (int j = 0; j < capacidad; j++)
 				{
 
-					if (i == k)
-						suma += numeros.Length;
+
+					suma += numeros[i][j];
 					numeros[i][j] = suma;
+			
 
 				}
 				suma = 0;
-				k++;
 				Console.WriteLine();
 			}
 
 
-		       //Aquí intento mostrar la suma de cada línea.
-			for (int i = 0; i < numeros.Length; i++)
+			
+			for (int i = 0; i < lineas; i++)
 			{
-				for (int j = 0; j <= numeros.Length; j++)
+
+				for (int j = 0; j < capacidad; j++)
 				{
 
-					if (i == i)
-						Console.Write(" El valor es {0} ", numeros[i][j]);
-
+					suma=numeros[i][j];
+					suma=suma/capacidad;
+					
 				}
-
-				
-				Console.WriteLine();
+				Console.WriteLine("El promedio de la línea {0} es {1}",i+1,suma);
 			}
 
 
