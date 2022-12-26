@@ -1,4 +1,15 @@
-﻿using System;
+
+/*80. Crea una variante del programa anterior, que pregunte al usuario cuántos 
+datos guardará en un primer bloque de números reales de doble precisión, 
+luego cuántos datos guardará en un segundo bloque, y finalmente pida todos esos datos. 
+Los debe guardar en un array de arrays. Después mostrará el promedio de los valores que 
+hay guardados en el primer subarray, luego el promedio de los valores en el segundo subarray 
+y finalmente el promedio global.
+Miguel Angel (...)
+*/
+
+
+using System;
 using System.Linq;
 
 namespace Ejercicio_80
