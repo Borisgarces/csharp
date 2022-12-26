@@ -10,6 +10,7 @@ namespace Ejercicio_80
 			byte lineas = 0;
 			double capacidad = 0;
 			double suma = 0;
+			double promedio=0;
 
 
 			Console.WriteLine();
@@ -86,10 +87,10 @@ namespace Ejercicio_80
 				{
 
 					suma=numeros[i][j];
-					suma=suma/capacidad;
+					promedio=suma/capacidad;
 					
 				}
-				Console.WriteLine("El promedio de la línea {0} es {1}",i+1,suma);
+				Console.WriteLine("El promedio de la línea {0} es {1}",i+1,promedio);
 			}
 
 
